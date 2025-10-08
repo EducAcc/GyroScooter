@@ -1,0 +1,203 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+}
+
+.container {
+    padding: 23px 10%;
+}
+
+.head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.phone {
+    color: #5E5D5D;
+    font-size: 14pt;
+}
+
+.commition {
+    background-color: #FE8E05;
+    padding: 12px 47px;
+    font-size: 14pt;
+    border-radius:  10px;
+    text-decoration: none;
+    color: #FFF;
+    font-weight: bold;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.separator {
+    background-color: #5e5d5d4f;
+    border: none;
+    height: 2px;
+}
+
+.nav-list {
+    list-style-type:none;
+    display: flex;
+    gap: 2em;
+    padding: 0;
+    
+}
+
+.nav-list a {
+    text-decoration: none;
+    color: #5E5D5D;
+    font-size: 14pt;
+}
+
+.logo {
+    color: #000;
+    font-weight:bold;
+    font-size: 30pt;
+}
+
+.giro {
+    background-image: url(/imgs/Scooter_Main.png);
+    background-size: cover;
+    width: 100%;
+    height: 70vh;
+    min-height: 600px;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+.giro-description {
+    color : #FFF;
+    display: block;
+    text-align: center;
+    font-size: 18pt;
+    margin: 19px 0 40px;
+    font-weight: 300;
+}
+
+.catalog {
+    text-decoration: none;
+    display: block;
+    color: #000;
+    border: #FFF;
+    border-radius: 10px;
+    display: block;
+    background-color: #FFF;
+    font-size: 14pt;
+    font-weight: bold;
+    padding: 7px 23px;
+}
+
+.my-giro {
+    font-size:74pt;
+    color: #fff;
+    font-weight: 300;
+}
+
+.advantage-head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.section-header {
+    color: #5E5D5D;
+    font-weight: 300;
+    font-size: 28pt;
+    display: block;
+    margin: 5% 0 7%;
+}
+
+.advantage-card-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8%;
+
+}
+
+.advantage-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.advantage-img {
+    width: 10em;
+    height: 10em;
+    margin-bottom: 8%;
+}
+
+.advantage-description {
+    font-weight: 300;
+    font-size: 14pt;
+    color: #5E5D5D;
+}
+
+.about-description {
+    font-weight: 300;
+    line-height: 30px;
+    font-size: 17pt;
+}
+
+.newsletter {
+    background-color: #FE8E05;
+    display: flex;
+    padding: 2% 10%;
+    gap: 3%;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 5%;
+}
+
+.newsletter-description {
+    color: #FFF;
+    font-weight: 600;
+    max-width: 30%;
+    font-size: 13pt;
+}
+
+.interact {
+    display: flex;
+    gap: 3%;
+    width: 70%;
+    justify-content: end;
+}
+
+.input-field {
+    color: #FFF;
+    background-color: transparent;
+    border: 1px solid #FFF;
+    padding: 1% 2%;
+    width: 30%;
+}
+
+.input-field::placeholder {
+    color: #FFF;
+}
+
+.input-field:focus {
+    outline: none;
+    border-color: #F0F0F0;
+}
+
+.newsletter-btn {
+    background-color: #fff;
+    color: #000;
+    text-decoration: none;
+    padding: 1% 2%;
+    font-weight: bold;
+    font-size: 10pt;
+    width: 30%;
+    text-align: center;
+
+}
