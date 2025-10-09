@@ -232,3 +232,56 @@
     font-weight: 300;
     font-size: 16pt;
 }
+
+.catalog-head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.catalog-list {
+    padding-top: 1.5em;
+}
+
+.goods-container {
+    display: flex;
+    gap: 3%;
+    width: 100%;
+}
+
+.catalog-card {
+    display: flex;
+    flex-direction: column;
+    max-width: 20%;
+    height: auto;
+    background-color: #fff;
+    padding: 1em;
+}
+
+.card-tag {
+    background-color: #FE8E05;
+    font-weight: 600;
+    font-size: 12pt;
+    color: #FFF;
+}
+
+.catalog-card-img {
+    width: 80%;
+    height: 70%;
+    padding: 0.5em;
+    margin: 0 auto;
+    object-fit: contain;
+}
+
+.catalog-card-description {
+    color: #5E5D5D;
+    font-weight: 300;
+    font-size: 14pt;
+}
+
+.catalog-card-price {
+    color: #5E5D5D;
+    font-weight: bold;
+    font-size: 16pt;
+    padding-top: 1em;
+}
