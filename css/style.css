@@ -31,6 +31,7 @@
 
 .nav {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
 }
@@ -53,6 +54,10 @@
     text-decoration: none;
     color: #5E5D5D;
     font-size: 14pt;
+}
+
+.nav-list a:hover {
+    color: #FE8E05;
 }
 
 .logo {
@@ -114,14 +119,14 @@
     font-weight: 300;
     font-size: 28pt;
     display: block;
-    margin: 5% 0 7%;
+    margin: 3% 0 7%;
 }
 
 .advantage-card-container {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 8%;
+    gap: 10%;
 
 }
 
@@ -129,11 +134,13 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: 20%;
+
 }
 
 .advantage-img {
-    width: 10em;
-    height: 10em;
+    width: 90%;
+    height: 80%;
     margin-bottom: 8%;
 }
 
@@ -223,14 +230,24 @@
 
 .catalog-list {
     display: flex;
+    flex-wrap: wrap;
     list-style-type: none;
     gap: 3em;
+}
+
+.catalog-item:hover {
+    background-color: #FE8E05;
+    color: #FFF;
+    border-radius: 10px;
+    transition: background-color 0.1s ease-in-out;
+    
 }
 
 .catalog-item {
     color:#000;
     font-weight: 300;
     font-size: 16pt;
+    padding: 0 0.3em;
 }
 
 .catalog-head {
@@ -245,17 +262,21 @@
 
 .goods-container {
     display: flex;
-    gap: 3%;
+    gap: 5%;
     width: 100%;
 }
 
 .catalog-card {
     display: flex;
     flex-direction: column;
-    max-width: 20%;
+    max-width: 25%;
     height: auto;
     background-color: #fff;
-    padding: 1em;
+}
+
+.catalog-card:hover {
+    box-shadow: 5px 10px 10px lightgray;
+    transition: box-shadow 0.3s ease-in-out; 
 }
 
 .card-tag {
@@ -263,9 +284,22 @@
     font-weight: 600;
     font-size: 12pt;
     color: #FFF;
+    width: auto;
+    align-self: flex-start;
+    padding: 0.2em 0.6em;
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+    margin-top: 1em;
+}
+
+.card-content {
+    padding: 1em;
+    display: flex;
+    flex-direction: column;
 }
 
 .catalog-card-img {
+    display: block;
     width: 80%;
     height: 70%;
     padding: 0.5em;
@@ -284,5 +318,179 @@
     font-weight: bold;
     font-size: 16pt;
     padding-top: 1em;
+}
 
+.consult-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3%;
+}
+
+.consult-card {
+    background-color: #FBFBFB;
+    width: 30%;
+    display: flex;
+}
+
+.consult-img-container {
+    width: 65%;
+    height: 100%;
+}
+
+.consult-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.consult-name {
+    font-size: 20px;
+    color: #5E5D5D;
+    margin-bottom: 0.3em;
+}
+
+.consult-vacation {
+    color: #5E5D5D;
+    font-style: italic;
+    font-size: 12px;
+}
+
+.consult-button {
+    text-decoration: none;
+    background-color: #FE8E05;
+    border-radius: 10px;
+    padding: 0.2em 0.5em;
+    color: #FFF;
+    display: inline-block;
+    width: auto;
+    align-self: flex-start;
+    margin-top: 1em;
+}
+
+.brands {
+    background-color: #FBFBFB;
+    margin-top: 3%;
+}
+
+.brand-list {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3%;
+    padding: 3%;
+    align-items: center;
+    justify-content: center;
+}
+
+.brand-item {
+    text-decoration: none;
+    color: #9B9B9B;
+    font-weight: bold;
+    font-size: 40px;
+}
+
+.info-container {
+    display: flex;
+    gap: 2%;
+    flex-wrap: wrap;
+    margin-bottom: 5%;
+}
+
+.info-block {
+    width: 23%;  
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.block-text {
+    position: absolute;
+    width: 80%;
+    font-size: 16px;
+    font-weight: bold;
+    color: #FFF;
+    top: 40%;
+    text-align: center;
+    z-index: 2;
+}
+
+.block-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.dark-layer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    background-color: #F0F0F0;
+    padding: 5% 10%;
+}
+
+.footer-text {
+    width: 40%;
+    font-size: 14px;
+}
+
+.footer-block-container {
+    display: flex;
+    justify-content: center;
+    gap: 3%;
+    width: 50%;
+}
+
+.footer-block {
+    width: 33%;
+}
+
+.footer-block-header {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.footer-nav {
+    list-style: none;
+    padding: 1.5em 0;
+}
+
+
+.footer-nav-item {
+    text-decoration: none;
+    color: #000;
+    font-size: 14px;
+}
+
+.footer-nav-item:hover {
+    color: #FE8E05;
+    transition: color 0.3 ease-in-out;
+}
+
+@media (max-width: 800px) {
+    .nav-list a, .catalog-item{
+        font-size: 14px;
+    }
+
+    .logo {
+        font-size: 20px;
+    }
+
+    .list {
+        font-size: 14px;
+    }
+
+    .brand-item {
+        font-size: 20px;
+    }
 }
